@@ -119,7 +119,7 @@ resource "null_resource" "configure-cat-app" {
   }
 }
 module "cloud-storage" {
-  source     = "tapp.terraform.io/oliver-test/cloud-storage/google"
+  source     = "app.terraform.io/oliver-test/cloud-storage/google"
   version    = "3.4.1"
   names      = ["hashicat-private"]
   prefix     = var.prefix
